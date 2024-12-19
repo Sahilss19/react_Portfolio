@@ -11,10 +11,10 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        'service_k2qawqh', // this one is urs Service ID
-        'template_c6rkpn6', // this one is template ID
+        'service_9bp27ja', // this one is urs Service ID
+        'template_1onqrva', // this one is template ID
         formRef.current,
-        'X7K7ebhIeOy3YwHki' // thats Public Key
+        'u9VbjsA_D7lUOwhDS' // thats Public Key
       )
       .then(
         (result) => {
@@ -43,7 +43,7 @@ const Contact = () => {
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
             <h5>Sahilkulria27@gmail.com</h5>
-            <a href="mailto:mekomerikomg@gmail.com">Send a message</a>
+            <a href="mailto:Sahilkulria27@gmail.com">Send a message</a>
           </article>
         </div>
         <form ref={formRef} onSubmit={handleSubmit}>
