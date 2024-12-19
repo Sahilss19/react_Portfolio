@@ -1,0 +1,153 @@
+
+header {
+  height: 100vh;
+  padding-top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header__content h1 {
+  font-size: 3rem; 
+  font-weight: 900;
+  color: #fff; 
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
+}
+
+.header__content h1 .highlight {
+  color: #ff5ea2; 
+}
+
+.header__content h2 {
+  font-size: 2rem; 
+  font-weight: 700;
+  color: #00f89e; 
+  margin-top: 0.5rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+.header__content p {
+  font-size: 1.5rem;
+  font-weight: 600; 
+  color: #ddd;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 0 5rem;
+  width: 100%;
+}
+
+
+.header__content {
+  flex: 1;
+  text-align: left;
+  margin-top: 2rem; 
+}
+
+.header__content h1,
+.header__content h2 {
+  margin: 0.5rem 0;
+}
+
+.header__content h1 .highlight {
+  color: #ff5ea2; 
+}
+.header__content h2 .highlight-green {
+  color: #00f89e;
+}
+
+.cta {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 2.5rem;
+}
+
+.cta .btn {
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-dark {
+  background-color: #1e1e2f;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #3b82f6;
+  color: #fff;
+}
+
+.code-display {
+  flex: 1;
+  background-color: #1e1e2f;
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: #f0f8ff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  line-height: 1.6;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+  margin-top: 2rem; 
+}
+
+
+.code-display span.keyword {
+  color: #569cd6; 
+}
+
+.code-display span.string {
+  color: #ce9178; 
+}
+
+.code-display span.property {
+  color: #9cdcfe; 
+}
+
+.code-display span.value {
+  color: #b5cea8; 
+}
+
+.code-display span.function {
+  color: #dcdcaa; 
+}
+
+.code-display pre {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .header__container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+
+  .header__content,
+  .code-display {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+
+  .cta {
+    flex-direction: column;
+    align-items: center;
+  }
+}
